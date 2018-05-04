@@ -1,0 +1,23 @@
+{
+  "name": "stranger-songs",
+  "version": "1.0.0",
+  "description": "School project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SabrinaNedjah/Stranger-Songs.git"
+  },
+  "author": "Pauline Aperghis, Raphael Guenassia, Sabrina Nedjah, Kelly Wagnac",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SabrinaNedjah/Stranger-Songs/issues"
+  },
+  "homepage": "https://github.com/SabrinaNedjah/Stranger-Songs#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
