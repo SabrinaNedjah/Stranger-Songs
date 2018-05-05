@@ -20,4 +20,4 @@ if ($q === '') {
 }
 
 // Includes
-require '' . $page . '.php';
+require 'pages/' . $page . '.php';

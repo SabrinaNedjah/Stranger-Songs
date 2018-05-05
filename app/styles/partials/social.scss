@@ -1,0 +1,33 @@
+@import "variables";
+footer{
+    font-family: "Gotham";
+    font-size:15px;
+    font-weight:400;
+    color:$white;
+    z-index:10;
+    a{
+        bottom:20px;
+        display:inline-block;
+        text-decoration:none;
+    }
+
+    a:hover{
+        color:$red;
+        transition:0.2s;
+    }
+    .watch{
+        position:absolute;
+        left:5%;
+    }
+    .social_icons{
+        position:absolute;
+        right:5%;
+        bottom:20px;
+        display:inline-block;
+        .social{
+            width:15px;
+            margin-right:10px;
+        }
+
+    }
+}

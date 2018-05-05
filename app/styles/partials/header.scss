@@ -1,11 +1,84 @@
 @import "variables";
-body{
-    background:black;
-    h1{
-    color:$red;
+header{
+    position:relative;
+    left:5%;
+    width:90%;
+    a{
+        display:inline-block;
     }
-    h2{
-        color:$white;
-        font-size:200px;
+    img{
+        width:100px;
+        display:inline-block;
+    }
+
+    .logo{
+        position:absolute;
+        top:0;
+    }
+
+    .netflix{
+        position:absolute;
+        top:35px;
+        right:0;
+    }
+
+    nav{
+        position:relative;
+        top:20px;
+        left:35%;
+        width:50%;
+        font-family: "Gotham";
+        font-size:15px;
+        font-weight: 400;
+        @media screen and (max-width:$break-medium) {
+            left:33%;
+          }
+          @media screen and (max-width:$break-small) {
+            left:27%;
+          }
+        
+        li {
+            display: inline-block;
+        }
+        
+        a {
+            position: relative;
+            display: block;
+            padding: 0 20px;
+            height: 60px;
+            line-height: 60px;
+            text-decoration: none;
+            text-transform:uppercase;
+            color: $white;
+        }
+
+        a:hover{
+            color:$red;
+            transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        a:after {
+            position: absolute;
+            left: 50%;
+            right: 50%;
+            height: 3px;
+            bottom: 10px;
+            content: "";
+            background-color:$red;
+            transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            transform: translate3d(0, 0, 0);
+        }
+
+        a:hover:after {
+            left: 20px;
+            right: 20px;
+        }
+
+        @mixin va ($pos: relative, $top: 50%) {
+            position: $pos;
+            top: $top;
+            transform: translateY(-50%);
+        }
+
     }
 }

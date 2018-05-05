@@ -27,9 +27,6 @@
   src: url("../../fonts/gotham/Gotham-Medium.ttf");
   font-weight: 400; }
 
-body {
-  background: #282828; }
-
 header {
   position: relative;
   left: 5%;

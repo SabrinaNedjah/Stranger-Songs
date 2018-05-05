@@ -1,0 +1,80 @@
+@import "variables";
+.home{
+    .home_texts{
+        margin:15% 0 0 5%;
+        width:50%;
+        h1{
+            margin-bottom:25px;
+            font-size:60px;
+            color:$white;
+            font-family: "Benguiat Bold";
+        }
+        h2{
+            font-size:20px;
+            line-height:24px;
+            color:$white;
+            font-family: "Gotham";
+        }
+
+        .button{
+            .button_play{
+                margin-top:20px;
+                padding: 17px 0 17px 0;
+                display: block;
+                width: 100%;
+                max-width: 200px;
+                height: 50px;
+                position: absolute;
+                z-index:2;
+                text-align: center;
+                background: $red;
+                color: $white;
+                font-family: "Gotham";
+                text-transform:uppercase;
+                border: 0;
+                cursor: pointer;
+            }
+            .button_play:hover{
+                margin: 30px 0px 0px 15px;
+                transition:0.4s;
+            }
+
+            .button_play:after{
+                margin: 20px 0px 0px 0px;
+                transition:0.4s;
+            }
+
+            .button_play:hover:after{
+                margin: 20px 0px 0px 0px;
+                transition:1s;
+            }
+            
+            .button_rect {
+                margin: 30px 0px 0px 15px;
+                padding: 17px 0 17px 0;
+                display: block;
+                width: 100%;
+                max-width: 200px;
+                height: 50px;
+                position: absolute;
+                z-index:1;
+                color: $white;
+                text-align: center;
+                border:3px solid $red;
+                cursor: pointer;
+            }
+        }
+    }
+    video { 
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+        transform: translateX(-50%) translateY(-50%);
+        transition: 1s opacity;
+    }
+}
