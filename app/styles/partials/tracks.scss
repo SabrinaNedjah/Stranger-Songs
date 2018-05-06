@@ -1,4 +1,80 @@
 @import "variables";
 .tracks{
-    
+    font-family:"Gotham";
+    font-weight:400;
+    width:100%;
+
+    h1{
+        margin-top:20px;
+        margin-bottom:15px;
+        text-align:center;
+        font-size:60px;
+        color:$white;
+        font-family: "Benguiat Bold";
+    }
+    h2{
+        font-size:20px;
+        text-align:center;
+        line-height:2px;
+        color:$white;
+        font-family: "Gotham";
+    }
+
+    audio{
+        margin-top:60px;
+    }
+
+    .song{
+        margin-top:60px;
+        width:85%;
+        margin:0 auto;
+    }
+
+    .playlist_elements{
+        text-align:center;
+        margin:0 auto;
+        width:100%;
+    }
+
+    .tbl-header{
+        margin-top:60px;
+        background:$red;
+       }
+      .tbl-content{
+        height:300px;
+        overflow-x:auto;
+        margin-top: 0px;
+        border: 1px solid rgba(255,255,255,0.3);
+      }
+
+    table{
+        margin:0 auto;
+        width:100%;
+        margin-top:0px;
+        table-layout: fixed;
+        text-align:center;
+      }
+      th{
+        padding: 20px 15px;
+        text-align: left;
+        font-weight: 700;
+        font-size: 12px;
+        background:$red;
+        color: #fff;
+        text-transform: uppercase;
+      }
+      td{
+        background:$black;
+        padding: 15px;
+        text-align: left;
+        vertical-align:middle;
+        font-weight: 300;
+        font-size: 12px;
+        color: #fff;
+        border-bottom: solid 1px rgba(255,255,255,0.1);
+      }
+      tr{
+        background:$black;
+    }
 }
+
