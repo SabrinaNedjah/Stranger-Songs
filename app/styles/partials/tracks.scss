@@ -22,14 +22,79 @@
 
     audio{
         margin-top:60px;
+        margin-bottom:60px;
     }
 
     .song{
-        margin-top:60px;
-        width:85%;
+        width:75%;
         margin:0 auto;
+        margin-top:50px;
+
+        ul.playlist_top{
+            width:100%;
+            background:$red;
+            color:$white;
+
+            li{
+                padding: 20px 150px 20px 15px;
+                display:inline-block;
+                table-layout: fixed;
+                font-weight: 700;
+                font-size: 12px;
+                background:$red;
+                color: #fff;
+                text-transform: uppercase;
+            }  
+        }
+
+        ol{
+            width:100%;
+            color:$white;
+            font-size:15px;
+            height:280px;
+            overflow-x:auto;
+            margin-top: 0px;
+            border:1px solid rgba(255,255,255,0.1);
+
+            li.music{
+                width:100%;
+                border-bottom: 1px solid  rgba(255,255,255,0.1);
+                cursor:pointer;
+                ul li{
+                    padding: 20px 0px 20px 0px;
+                    display:inline-block;
+                    font-weight: 500;
+                }
+
+                .title{
+                    margin-left:15px;
+                    width:22%;
+                }
+
+                .artist{
+                    width:23%;
+                }
+
+                .time{
+                    width:22%;
+                }
+            }
+            li.music.playing{
+                color:$red;
+            }
+        }
     }
 
+    ol::-webkit-scrollbar{
+	width: 5px
+    }
+    ol::-webkit-scrollbar-track{
+	background: rgba(0,0,0,0.04)
+    }
+    ol::-webkit-scrollbar-thumb{
+    background: $red;
+    }
+    /*
     .playlist_elements{
         text-align:center;
         margin:0 auto;
@@ -76,5 +141,6 @@
       tr{
         background:$black;
     }
+    */
 }
 
