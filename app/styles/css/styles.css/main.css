@@ -19,49 +19,20 @@
 
 @font-face {
   font-family: "Gotham";
-  src: url("../../fonts/gotham/Gotham-Light.otf");
-  font-weight: 300; }
-
-@font-face {
-  font-family: "Gotham";
   src: url("../../fonts/gotham/Gotham-Medium.ttf");
   font-weight: 400; }
-
-body {
-  background: #282828; }
-
-@font-face {
-  font-family: "Benguiat Bold";
-  src: url("../../fonts/Benguiat Bold.ttf"); }
-
-@font-face {
-  font-family: "Gotham";
-  src: url("../../fonts/gotham/Gotham-Black.otf");
-  font-weight: 900; }
-
-@font-face {
-  font-family: "Gotham";
-  src: url("../../fonts/gotham/Gotham-Bold.otf");
-  font-weight: 700; }
-
-@font-face {
-  font-family: "Gotham";
-  src: url("../../fonts/gotham/Gotham-Book.ttf");
-  font-weight: 500; }
 
 @font-face {
   font-family: "Gotham";
   src: url("../../fonts/gotham/Gotham-Light.otf");
   font-weight: 300; }
 
-@font-face {
-  font-family: "Gotham";
-  src: url("../../fonts/gotham/Gotham-Medium.ttf");
-  font-weight: 400; }
-
 body {
   background: #282828; }
 
+/***
+    HEADER - START
+********************************/
 header {
   position: relative;
   left: 5%;
@@ -120,70 +91,12 @@ header {
       left: 20px;
       right: 20px; }
 
-@font-face {
-  font-family: "Benguiat Bold";
-  src: url("../../fonts/Benguiat Bold.ttf"); }
-
-@font-face {
-  font-family: "Gotham";
-  src: url("../../fonts/gotham/Gotham-Black.otf");
-  font-weight: 900; }
-
-@font-face {
-  font-family: "Gotham";
-  src: url("../../fonts/gotham/Gotham-Bold.otf");
-  font-weight: 700; }
-
-@font-face {
-  font-family: "Gotham";
-  src: url("../../fonts/gotham/Gotham-Book.ttf");
-  font-weight: 500; }
-
-@font-face {
-  font-family: "Gotham";
-  src: url("../../fonts/gotham/Gotham-Light.otf");
-  font-weight: 300; }
-
-@font-face {
-  font-family: "Gotham";
-  src: url("../../fonts/gotham/Gotham-Medium.ttf");
-  font-weight: 400; }
-
-body {
-  background: #282828; }
-
-@font-face {
-  font-family: "Benguiat Bold";
-  src: url("../../fonts/Benguiat Bold.ttf"); }
-
-@font-face {
-  font-family: "Gotham";
-  src: url("../../fonts/gotham/Gotham-Black.otf");
-  font-weight: 900; }
-
-@font-face {
-  font-family: "Gotham";
-  src: url("../../fonts/gotham/Gotham-Bold.otf");
-  font-weight: 700; }
-
-@font-face {
-  font-family: "Gotham";
-  src: url("../../fonts/gotham/Gotham-Book.ttf");
-  font-weight: 500; }
-
-@font-face {
-  font-family: "Gotham";
-  src: url("../../fonts/gotham/Gotham-Light.otf");
-  font-weight: 300; }
-
-@font-face {
-  font-family: "Gotham";
-  src: url("../../fonts/gotham/Gotham-Medium.ttf");
-  font-weight: 400; }
-
-body {
-  background: #282828; }
-
+/***
+    HEADER - END
+********************************/
+/***
+    SOCIAL - START
+********************************/
 footer {
   font-family: "Gotham";
   font-size: 15px;
@@ -196,96 +109,128 @@ footer {
     text-decoration: none; }
   footer a:hover {
     color: #D8272A;
-    transition: 0.2s; }
+    transition: 0.1s; }
   footer .watch {
     position: absolute;
-    left: 5%; }
-  footer .social_icons {
-    position: absolute;
-    right: 5%;
-    bottom: 20px;
-    display: inline-block; }
-    footer .social_icons .social {
-      width: 15px;
-      margin-right: 10px; }
+    left: 5%;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
 
-@font-face {
-  font-family: "Benguiat Bold";
-  src: url("../../fonts/Benguiat Bold.ttf"); }
+.watch:hover {
+  left: 7%;
+  transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1); }
 
-@font-face {
-  font-family: "Gotham";
-  src: url("../../fonts/gotham/Gotham-Black.otf");
-  font-weight: 900; }
+.watch:after {
+  transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1); }
 
-@font-face {
-  font-family: "Gotham";
-  src: url("../../fonts/gotham/Gotham-Bold.otf");
-  font-weight: 700; }
+.social_icons {
+  position: absolute;
+  right: 5%;
+  bottom: 20px;
+  display: inline-block; }
+  .social_icons .social {
+    position: relative;
+    margin-right: 10px;
+    width: 15px;
+    transition-property: all;
+    transition-duration: 0.4s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
 
-@font-face {
-  font-family: "Gotham";
-  src: url("../../fonts/gotham/Gotham-Book.ttf");
-  font-weight: 500; }
+/***
+    SOCIAL - END
+********************************/
+/***
+    TRANSITION - START
+********************************/
+.transition {
+  transform: translateY(-30%);
+  position: relative;
+  z-index: 5;
+  transition: all 3s ease; }
 
-@font-face {
-  font-family: "Gotham";
-  src: url("../../fonts/gotham/Gotham-Light.otf");
-  font-weight: 300; }
+.slide_bottom {
+  transform: translateY(0%);
+  animation: 2s fadeIn; }
 
-@font-face {
-  font-family: "Gotham";
-  src: url("../../fonts/gotham/Gotham-Medium.ttf");
-  font-weight: 400; }
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
-body {
-  background: #282828; }
+.slide_button {
+  animation: 3s fade; }
 
+@keyframes fade {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.transition_top {
+  transition: all 3s ease; }
+
+.slide_top {
+  animation: 3s fadeOut; }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/***
+    TRANSITION - END
+********************************/
+/***
+    HOME - START
+********************************/
 .home .home_texts {
   margin: 15% 0 0 5%;
   width: 50%; }
   .home .home_texts h1 {
     margin-bottom: 25px;
-    font-size: 60px;
+    font-size: 48px;
     color: #FAFAFA;
     font-family: "Benguiat Bold"; }
   .home .home_texts h2 {
-    font-size: 20px;
+    width: 70%;
+    font-size: 17px;
     line-height: 24px;
     color: #FAFAFA;
-    font-family: "Gotham"; }
+    font-family: "Gotham";
+    font-weight: 300; }
   .home .home_texts .button .button_play {
     margin-top: 20px;
-    padding: 17px 0 17px 0;
+    padding: 13px 0 10px 0;
     display: block;
     width: 100%;
-    max-width: 200px;
-    height: 50px;
+    max-width: 120px;
+    height: 40px;
     position: absolute;
     z-index: 2;
     text-align: center;
     background: #D8272A;
     color: #FAFAFA;
     font-family: "Gotham";
+    font-size: 14px;
     text-transform: uppercase;
     border: 0;
-    cursor: pointer; }
+    cursor: pointer;
+    transition: 0.4s cubic-bezier(0.215, 0.61, 0.355, 1); }
   .home .home_texts .button .button_play:hover {
-    margin: 30px 0px 0px 15px;
-    transition: 0.4s; }
-  .home .home_texts .button .button_play:after {
-    margin: 20px 0px 0px 0px;
-    transition: 0.4s; }
-  .home .home_texts .button .button_play:hover:after {
-    margin: 20px 0px 0px 0px;
-    transition: 1s; }
+    margin: 27px 0px 0px 8px;
+    transition: 0.4s cubic-bezier(0.215, 0.61, 0.355, 1); }
+  .home .home_texts .button .button_play::after {
+    transition: 0.4s cubic-bezier(0.215, 0.61, 0.355, 1); }
   .home .home_texts .button .button_rect {
-    margin: 30px 0px 0px 15px;
+    margin: 27px 0px 0px 8px;
     padding: 17px 0 17px 0;
     display: block;
     width: 100%;
-    max-width: 200px;
-    height: 50px;
+    max-width: 120px;
+    height: 40px;
     position: absolute;
     z-index: 1;
     color: #FAFAFA;
@@ -305,38 +250,12 @@ body {
   transform: translateX(-50%) translateY(-50%);
   transition: 1s opacity; }
 
-@font-face {
-  font-family: "Benguiat Bold";
-  src: url("../../fonts/Benguiat Bold.ttf"); }
-
-@font-face {
-  font-family: "Gotham";
-  src: url("../../fonts/gotham/Gotham-Black.otf");
-  font-weight: 900; }
-
-@font-face {
-  font-family: "Gotham";
-  src: url("../../fonts/gotham/Gotham-Bold.otf");
-  font-weight: 700; }
-
-@font-face {
-  font-family: "Gotham";
-  src: url("../../fonts/gotham/Gotham-Book.ttf");
-  font-weight: 500; }
-
-@font-face {
-  font-family: "Gotham";
-  src: url("../../fonts/gotham/Gotham-Light.otf");
-  font-weight: 300; }
-
-@font-face {
-  font-family: "Gotham";
-  src: url("../../fonts/gotham/Gotham-Medium.ttf");
-  font-weight: 400; }
-
-body {
-  background: #282828; }
-
+/***
+    HOME - END
+********************************/
+/***
+    TRACKS - START
+********************************/
 .tracks {
   font-family: "Gotham";
   font-weight: 400;
@@ -453,3 +372,7 @@ body {
     background: rgba(0, 0, 0, 0.04); }
   .tracks ol::-webkit-scrollbar-thumb {
     background: #D8272A; }
+
+/***
+    TRACKS - END
+********************************/

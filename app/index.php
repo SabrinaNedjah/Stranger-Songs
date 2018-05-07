@@ -1,4 +1,8 @@
 <?php
+// Includes - Top
+include 'partials/_header.php';
+include 'partials/_menu.php';
+
 // Routing
 if(!isset($_GET['q'])){
 $q = '';
@@ -6,18 +10,25 @@ $q = '';
 $q = $_GET['q'];
 }
 
-
-if ($q === '') {
-    $page = 'home';
-} else if ($q === 'home') {
-    $page = 'home';
-} else if ($q === 'about') {
-    $page = 'about';
-} else if ($q === 'tracks') {
-    $page = 'tracks';
-} else {
-    $page = '404';
+switch ($q) {
+    case '':
+        $page = 'home';
+        break;
+    case $q === 'home':
+        $page = 'home';
+        break;
+    case $q === 'about':
+        $page = 'about';
+        break;
+    case $q === 'tracks':
+        $page = 'tracks';
+        break;
+    default:
+        $page = '404';
 }
 
-// Includes
+// Includes 
 require 'pages/' . $page . '.php';
+// Includes - Footer
+include 'partials/_social.php';
+include 'partials/_footer.php';

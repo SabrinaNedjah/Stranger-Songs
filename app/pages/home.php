@@ -1,12 +1,9 @@
-<?php
-include 'partials/_header.php';
-include 'partials/_menu.php';
-?>
+<!-- HOME - START -->
 <section class="home">
     <div class="home_texts">
-        <h1>Stranger Things</h1>
-        <h2>Compose your soundtrack like Stranger Things's song and wake up the musician who is in you</h2>
-        <div class="button">
+        <h1 class="transition">Stranger Things</h1>
+        <h2 class="transition">Compose your soundtrack like Stranger Things's song and wake up the musician who is in you.</h2>
+        <div class="button transition button_transition">
             <a href="game">
                 <div class="button_play">
                     <p>Let's play</p>
@@ -15,13 +12,11 @@ include 'partials/_menu.php';
             </a>
         </div>
     </div>
-<!-- VIDEO -->
+<!-- HOME - END -->
+<!-- VIDEO - START -->
 <video poster="images/home/stranger_things_home.jpg" playsinline autoplay muted loop>
 <source src="video/stranger_song_video.mp4" type="video/mp4">
 </video>
-<!-- VIDEO -->
+<!-- VIDEO - END -->
 </section>
-<?php
-include 'partials/_social.php';
-include 'partials/_footer.php';
-?>
+

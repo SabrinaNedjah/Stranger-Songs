@@ -1,7 +1,3 @@
-<?php
-include 'partials/_header.php';
-include 'partials/_menu.php';
-?>
 <section class="tracks">
     <h1>Tracks</h1>
     <h2>The beautiful songs of the users</h2>
@@ -187,7 +183,3 @@ include 'partials/_menu.php';
 </section>
 -->
 </section>
-<?php
-include 'partials/_social.php';
-include 'partials/_footer.php';
-?>
