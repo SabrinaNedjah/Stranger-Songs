@@ -14,9 +14,12 @@
             </div>
         </a>
         <div id="popup">
-          <div>
+          <div class="popup">
+              <img src="images/tracks/ARROW_1.png" alt="arrow">
               <p>Next track</p>
+              <img src="images/tracks/ARROW_2.png" alt="arrow">
               <p>Previous track</p>
+              <img src="images/tracks/SPACE.png" alt="arrow">
               <p>Play/pause</p>
         </div>
   </div>

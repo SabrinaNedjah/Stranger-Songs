@@ -123,6 +123,9 @@ footer {
   font-weight: 400;
   color: #FAFAFA;
   z-index: 10; }
+  @media (max-width: 999px) {
+    footer {
+      display: none; } }
   footer a {
     bottom: 20px;
     display: inline-block;
@@ -212,6 +215,10 @@ footer {
   @media (max-width: 1000px) {
     .home .home_texts {
       width: 70%; } }
+  @media (max-width: 780px) {
+    .home .home_texts {
+      margin: 0 0 10% 5%;
+      width: 90%; } }
   .home .home_texts h1 {
     margin-bottom: 25px;
     font-size: 48px;
@@ -226,6 +233,7 @@ footer {
     font-weight: 300; }
   .home .home_texts .button .button_play {
     margin-top: 20px;
+    margin-bottom: 30px;
     padding: 10px 0 10px 0;
     display: block;
     width: 100%;
@@ -248,7 +256,7 @@ footer {
   .home .home_texts .button .button_play::after {
     transition: 0.4s cubic-bezier(0.215, 0.61, 0.355, 1); }
   .home .home_texts .button .button_rect {
-    margin: 27px 0px 0px 8px;
+    margin: 27px 0px 30px 8px;
     padding: 17px 0 17px 0;
     display: block;
     width: 100%;
@@ -338,15 +346,27 @@ footer {
     font-size: 60px;
     color: #FAFAFA;
     font-family: "Benguiat Bold"; }
+    @media (max-width: 780px) {
+      .tracks h1 {
+        font-size: 48px; } }
   .tracks h2 {
     font-size: 20px;
     text-align: center;
     line-height: 2px;
     color: #FAFAFA;
     font-family: "Gotham"; }
+    @media (max-width: 780px) {
+      .tracks h2 {
+        font-size: 15px; } }
   .tracks .player {
     width: 65%;
     margin-left: 17%; }
+    @media (max-width: 1000px) {
+      .tracks .player {
+        margin-left: 27%; } }
+    @media (max-width: 777px) {
+      .tracks .player {
+        margin-left: 18%; } }
   .tracks .button_play {
     margin-top: 33px;
     margin-left: 12%;
@@ -367,12 +387,21 @@ footer {
     border: 0;
     cursor: pointer;
     transition: 0.4s cubic-bezier(0.215, 0.61, 0.355, 1); }
+    @media (max-width: 1440px) {
+      .tracks .button_play {
+        margin-left: 19%; } }
+    @media (max-width: 1300px) {
+      .tracks .button_play {
+        margin-left: 12%; } }
+    @media (max-width: 1200px) {
+      .tracks .button_play {
+        margin-left: 8%; } }
+    @media (max-width: 1000px) {
+      .tracks .button_play {
+        display: none; } }
   .tracks .button_play:hover {
-    margin-top: 35px;
-    margin-left: 13%;
-    transition: 0.4s cubic-bezier(0.215, 0.61, 0.355, 1); }
-  .tracks .button_play::after {
-    transition: 0.4s cubic-bezier(0.215, 0.61, 0.355, 1); }
+    background: #FAFAFA;
+    color: #D8272A; }
   .tracks #popup {
     background-color: rgba(0, 0, 0, 0.5);
     bottom: 0;
@@ -384,15 +413,22 @@ footer {
     top: 0;
     transition: all 1s;
     z-index: 9999; }
-  .tracks #popup div {
-    position: absolute;
-    top: 255px;
-    left: 65%;
-    background-color: #333;
-    color: #ccc;
-    height: 200px;
-    margin: 2em auto;
-    width: 210px; }
+    .tracks #popup div {
+      position: absolute;
+      top: 255px;
+      left: 65%;
+      background-color: #FAFAFA;
+      color: #282828;
+      height: 200px;
+      margin: 2em auto;
+      width: 210px; }
+    .tracks #popup .popup {
+      padding: 30px 0px 0px 10px; }
+      .tracks #popup .popup img {
+        display: inline-block;
+        width: 60px; }
+      .tracks #popup .popup p {
+        display: inline-block; }
   .tracks audio {
     margin-top: 60px;
     margin-bottom: 60px; }
@@ -400,13 +436,16 @@ footer {
     width: 65%;
     margin: 0 auto;
     margin-top: 30px; }
+    @media (max-width: 765px) {
+      .tracks .song {
+        width: 88%; } }
     .tracks .song ul.playlist_top {
       width: 100%;
       background: #D8272A;
       color: #FAFAFA;
       margin: 0; }
       .tracks .song ul.playlist_top li {
-        padding: 20px 150px 20px 15px;
+        padding: 20px 140px 20px 15px;
         display: inline-block;
         table-layout: fixed;
         font-weight: 700;
@@ -414,6 +453,30 @@ footer {
         background: #D8272A;
         color: #fff;
         text-transform: uppercase; }
+        @media (max-width: 1440px) {
+          .tracks .song ul.playlist_top li {
+            padding: 20px 170px 20px 15px; } }
+        @media (max-width: 1300px) {
+          .tracks .song ul.playlist_top li {
+            padding: 20px 140px 20px 15px; } }
+        @media (max-width: 1210px) {
+          .tracks .song ul.playlist_top li {
+            padding: 20px 120px 20px 15px; } }
+        @media (max-width: 1110px) {
+          .tracks .song ul.playlist_top li {
+            padding: 20px 90px 20px 15px; } }
+        @media (max-width: 990px) {
+          .tracks .song ul.playlist_top li {
+            padding: 20px 90px 20px 40px; } }
+        @media (max-width: 845px) {
+          .tracks .song ul.playlist_top li {
+            padding: 20px 90px 20px 30px; } }
+        @media (max-width: 770px) {
+          .tracks .song ul.playlist_top li {
+            padding: 20px 90px 20px 30px; } }
+      @media (max-width: 990px) {
+        .tracks .song ul.playlist_top li:last-child {
+          display: none; } }
     .tracks .song ol {
       width: 100%;
       color: #FAFAFA;
@@ -430,13 +493,24 @@ footer {
           padding: 20px 0px 20px 0px;
           display: inline-block;
           font-weight: 500; }
-        .tracks .song ol li.music .title {
+        .tracks .song ol li.music .title, .tracks .song ol li.music .artist, .tracks .song ol li.music .time {
           margin-left: 15px;
-          width: 25%; }
-        .tracks .song ol li.music .artist {
-          width: 25%; }
-        .tracks .song ol li.music .time {
           width: 24%; }
+          @media (max-width: 1210px) {
+            .tracks .song ol li.music .title, .tracks .song ol li.music .artist, .tracks .song ol li.music .time {
+              width: 22%; } }
+          @media (max-width: 1110px) {
+            .tracks .song ol li.music .title, .tracks .song ol li.music .artist, .tracks .song ol li.music .time {
+              width: 20%; } }
+          @media (max-width: 990px) {
+            .tracks .song ol li.music .title, .tracks .song ol li.music .artist, .tracks .song ol li.music .time {
+              width: 30%; } }
+          @media (max-width: 770px) {
+            .tracks .song ol li.music .title, .tracks .song ol li.music .artist, .tracks .song ol li.music .time {
+              width: 28%; } }
+        @media (max-width: 990px) {
+          .tracks .song ol li.music .share {
+            display: none; } }
       .tracks .song ol li.music.playing {
         background: #D8272A;
         color: #282828; }
