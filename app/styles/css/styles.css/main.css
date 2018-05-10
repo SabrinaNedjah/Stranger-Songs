@@ -332,7 +332,7 @@ footer {
     }
     */ }
   .tracks h1 {
-    margin-top: 20px;
+    margin-top: 0px;
     margin-bottom: 15px;
     text-align: center;
     font-size: 60px;
@@ -344,13 +344,75 @@ footer {
     line-height: 2px;
     color: #FAFAFA;
     font-family: "Gotham"; }
+  .tracks .player {
+    /*width:65%;
+        margin-left:40px;
+        */
+    margin: 0;
+    padding: 0; }
+  .tracks .button_play {
+    margin-top: 2px;
+    margin-left: 40%;
+    padding: 10px 0 10px 0;
+    display: inline-block;
+    width: 100%;
+    max-width: 210px;
+    height: 40px;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    background: #D8272A;
+    color: #FAFAFA;
+    font-family: "Gotham";
+    font-size: 14px;
+    text-transform: uppercase;
+    border: 0;
+    cursor: pointer;
+    transition: 0.4s cubic-bezier(0.215, 0.61, 0.355, 1); }
+  .tracks .button_play:hover {
+    margin-top: 10px;
+    margin-left: 41%;
+    transition: 0.4s cubic-bezier(0.215, 0.61, 0.355, 1); }
+  .tracks .button_play::after {
+    transition: 0.4s cubic-bezier(0.215, 0.61, 0.355, 1); }
+  .tracks .button_rect {
+    margin-top: 10px;
+    margin-left: 41%;
+    padding: 17px 0 17px 0;
+    display: block;
+    width: 100%;
+    max-width: 210px;
+    height: 40px;
+    position: absolute;
+    z-index: 1;
+    color: #FAFAFA;
+    text-align: center;
+    border: 3px solid #D8272A;
+    cursor: pointer; }
+  .tracks #popup {
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    display: none;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all 1s;
+    z-index: 9999; }
+  .tracks #popup div {
+    background-color: #333;
+    color: #ccc;
+    height: 200px;
+    margin: 2em auto;
+    width: 200px; }
   .tracks audio {
     margin-top: 60px;
     margin-bottom: 60px; }
   .tracks .song {
-    width: 75%;
+    width: 65%;
     margin: 0 auto;
-    margin-top: 50px; }
+    margin-top: 30px; }
     .tracks .song ul.playlist_top {
       width: 100%;
       background: #D8272A;
@@ -383,13 +445,16 @@ footer {
           font-weight: 500; }
         .tracks .song ol li.music .title {
           margin-left: 15px;
-          width: 22%; }
+          width: 25%; }
         .tracks .song ol li.music .artist {
-          width: 21%; }
+          width: 25%; }
         .tracks .song ol li.music .time {
-          width: 20%; }
+          width: 24%; }
       .tracks .song ol li.music.playing {
-        color: #D8272A; }
+        background: #D8272A;
+        color: #282828; }
+        .tracks .song ol li.music.playing .title, .tracks .song ol li.music.playing .artist, .tracks .song ol li.music.playing .time, .tracks .song ol li.music.playing .share {
+          font-weight: 600; }
   .tracks ol::-webkit-scrollbar {
     width: 5px; }
   .tracks ol::-webkit-scrollbar-track {
@@ -425,25 +490,25 @@ footer {
         width: 180px; } }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
-  header, footer, .home {
+  header, footer, .home, .tracks {
     display: none; }
   .app {
     display: block; } }
 
 @media only screen and (min-device-width: 834px) and (max-device-width: 834px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-  header, footer, .home {
+  header, footer, .home, .tracks {
     display: none; }
   .app {
     display: block; } }
 
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
-  header, footer, .home {
+  header, footer, .home, .tracks {
     display: none; }
   .app {
     display: block; } }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  header, footer, .home {
+  header, footer, .home, .tracks {
     display: none; }
   .app {
     display: block; } }
