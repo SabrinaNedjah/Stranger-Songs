@@ -1,5 +1,5 @@
 <!-- HOME - START -->
-<section class="home">
+<section class="home container-fluid">
     <div class="home_texts">
         <h1 class="transition">Stranger Things</h1>
         <h2 class="transition">Compose your soundtrack like Stranger Things's song and wake up the musician who is in you.</h2>
