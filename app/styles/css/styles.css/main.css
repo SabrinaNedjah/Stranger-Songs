@@ -290,55 +290,7 @@ footer {
 .tracks {
   font-family: "Gotham";
   font-weight: 400;
-  width: 100%;
-  /*
-    .playlist_elements{
-        text-align:center;
-        margin:0 auto;
-        width:100%;
-    }
-
-    .tbl-header{
-        margin-top:60px;
-        background:$red;
-       }
-      .tbl-content{
-        height:300px;
-        overflow-x:auto;
-        margin-top: 0px;
-        border: 1px solid rgba(255,255,255,0.3);
-      }
-
-    table{
-        margin:0 auto;
-        width:100%;
-        margin-top:0px;
-        table-layout: fixed;
-        text-align:center;
-      }
-      th{
-        padding: 20px 15px;
-        text-align: left;
-        font-weight: 700;
-        font-size: 12px;
-        background:$red;
-        color: #fff;
-        text-transform: uppercase;
-      }
-      td{
-        background:$black;
-        padding: 15px;
-        text-align: left;
-        vertical-align:middle;
-        font-weight: 300;
-        font-size: 12px;
-        color: #fff;
-        border-bottom: solid 1px rgba(255,255,255,0.1);
-      }
-      tr{
-        background:$black;
-    }
-    */ }
+  width: 100%; }
   .tracks h1 {
     margin-top: 0px;
     margin-bottom: 15px;
@@ -426,6 +378,7 @@ footer {
       padding: 30px 0px 0px 10px; }
       .tracks #popup .popup img {
         display: inline-block;
+        vertical-align: middle;
         width: 60px; }
       .tracks #popup .popup p {
         display: inline-block; }
@@ -494,8 +447,13 @@ footer {
           display: inline-block;
           font-weight: 500; }
         .tracks .song ol li.music .title, .tracks .song ol li.music .artist, .tracks .song ol li.music .time {
-          margin-left: 15px;
-          width: 24%; }
+          margin-left: 15px; }
+          @media (max-width: 1440px) {
+            .tracks .song ol li.music .title, .tracks .song ol li.music .artist, .tracks .song ol li.music .time {
+              width: 23%; } }
+          @media (max-width: 1280px) {
+            .tracks .song ol li.music .title, .tracks .song ol li.music .artist, .tracks .song ol li.music .time {
+              width: 22%; } }
           @media (max-width: 1210px) {
             .tracks .song ol li.music .title, .tracks .song ol li.music .artist, .tracks .song ol li.music .time {
               width: 22%; } }
