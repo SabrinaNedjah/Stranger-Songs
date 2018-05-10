@@ -345,14 +345,11 @@ footer {
     color: #FAFAFA;
     font-family: "Gotham"; }
   .tracks .player {
-    /*width:65%;
-        margin-left:40px;
-        */
-    margin: 0;
-    padding: 0; }
+    width: 65%;
+    margin-left: 17%; }
   .tracks .button_play {
-    margin-top: 2px;
-    margin-left: 40%;
+    margin-top: 33px;
+    margin-left: 12%;
     padding: 10px 0 10px 0;
     display: inline-block;
     width: 100%;
@@ -365,30 +362,17 @@ footer {
     color: #FAFAFA;
     font-family: "Gotham";
     font-size: 14px;
+    font-weight: 300;
     text-transform: uppercase;
     border: 0;
     cursor: pointer;
     transition: 0.4s cubic-bezier(0.215, 0.61, 0.355, 1); }
   .tracks .button_play:hover {
-    margin-top: 10px;
-    margin-left: 41%;
+    margin-top: 35px;
+    margin-left: 13%;
     transition: 0.4s cubic-bezier(0.215, 0.61, 0.355, 1); }
   .tracks .button_play::after {
     transition: 0.4s cubic-bezier(0.215, 0.61, 0.355, 1); }
-  .tracks .button_rect {
-    margin-top: 10px;
-    margin-left: 41%;
-    padding: 17px 0 17px 0;
-    display: block;
-    width: 100%;
-    max-width: 210px;
-    height: 40px;
-    position: absolute;
-    z-index: 1;
-    color: #FAFAFA;
-    text-align: center;
-    border: 3px solid #D8272A;
-    cursor: pointer; }
   .tracks #popup {
     background-color: rgba(0, 0, 0, 0.5);
     bottom: 0;
@@ -402,13 +386,13 @@ footer {
     z-index: 9999; }
   .tracks #popup div {
     position: absolute;
-    bottom: 35px;
-    left: 40%;
+    top: 255px;
+    left: 65%;
     background-color: #333;
     color: #ccc;
     height: 200px;
     margin: 2em auto;
-    width: 200px; }
+    width: 210px; }
   .tracks audio {
     margin-top: 60px;
     margin-bottom: 60px; }

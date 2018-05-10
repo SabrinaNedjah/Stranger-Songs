@@ -6,6 +6,19 @@
             <source type="audio/mp3" src="musics/Memories That You Call (feat. Monsoonsiren)_158279202_soundcloud.mp3">
             Sorry, your browser does not support HTML5 audio.
         </audio>
+        <a href="#popup">
+        <div class="button_play">
+                Keyboard Options
+            </div>
+            <div class="button_rect">
+            </div>
+        </a>
+        <div id="popup">
+          <div>
+              <p>Next track</p>
+              <p>Previous track</p>
+              <p>Play/pause</p>
+        </div>
   </div>
     </div>
     <div class="song">
@@ -81,20 +94,6 @@
             </ul>
         </li>
         </ol>
-        </div>
-
-        <a href="#popup">
-            <div class="button_play">
-                Keyboard Options
-            </div>
-            <div class="button_rect">
-            </div>
-        </a>
-        <div id="popup">
-          <div>
-              <p>Next track</p>
-              <p>Previous track</p>
-              <p>Play/pause</p>
         </div>
       <!--  
 <section class="song">
