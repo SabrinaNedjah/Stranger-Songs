@@ -1,3 +1,6 @@
+<?php
+include 'bdd/config.php';
+?>
 <section class="tracks">
     <h1>Tracks</h1>
     <h2>The beautiful songs of the users</h2>
@@ -32,71 +35,17 @@
         <li>Share</li>
     </ul>
     <ol>
-        <li class="music"><a href="#" data-src="http://kolber.github.io/audiojs/demos/mp3/01-dead-wrong-intro.mp3"></a>
+    <?php foreach($tracks as $song):?>
+        <li class="music"><a href="#" data-src="<?= $song->Link ?>"></a>
             <ul>
-                <li class="title">D'accord oui ok</li>
-                <li class="artist">Kelly</li>
-                <li class="time">0:50</li>
-                <li class="share"><a href="about">ok</a></li>
+                <li class="title"><?= $song->Title ?></li>
+                <li class="artist"><?= $song->Artist ?></li>
+                <li class="time"><?= $song->Time ?></li>
+                <li class="share"><a href="about"><?= $song->Share ?></a></li>
             </ul>
         </li>
-        <li class="music"><a href="#" data-src="http://kolber.github.io/audiojs/demos/mp3/02-juicy-r.mp3"></a>
-            <ul>
-                <li class="title">D'accord non</li>
-                <li class="artist">Kelly</li>
-                <li class="time">0:50</li>
-                <li class="share"><a href="about">ok</a></li>
-            </ul>
-        </li>
-        <li class="music"><a href="#" data-src="http://kolber.github.io/audiojs/demos/mp3/03-its-all-about-the-crystalizabeths.mp3"></a>
-            <ul>
-                <li class="title">D'accord ok</li>
-                <li class="artist">Kelly oui d'accord ok</li>
-                <li class="time">0:50</li>
-                <li class="share">link</li>
-            </ul>
-        </li>
-        <li class="music"><a href="#" data-src="http://kolber.github.io/audiojs/demos/mp3/05-one-more-chance-for-a-heart-to-skip-a-beat.mp3"></a>
-            <ul>
-                <li class="title">D'accord ok oui</li>
-                <li class="artist">Kelly</li>
-                <li class="time">0:50</li>
-                <li class="share">link</li>
-            </ul>
-        </li>
-        <li class="music"><a href="#" data-src="http://kolber.github.io/audiojs/demos/mp3/05-one-more-chance-for-a-heart-to-skip-a-beat.mp3"></a>
-            <ul>
-                <li class="title">D'accord ok oui</li>
-                <li class="artist">Kelly</li>
-                <li class="time">0:50</li>
-                <li class="share">link</li>
-            </ul>
-        </li>
-        <li class="music"><a href="#" data-src="http://kolber.github.io/audiojs/demos/mp3/05-one-more-chance-for-a-heart-to-skip-a-beat.mp3"></a>
-            <ul>
-                <li class="title">D'accord ok oui</li>
-                <li class="artist">Kelly</li>
-                <li class="time">0:50</li>
-                <li class="share">link</li>
-            </ul>
-        </li>
-        <li class="music"><a href="#" data-src="http://kolber.github.io/audiojs/demos/mp3/05-one-more-chance-for-a-heart-to-skip-a-beat.mp3"></a>
-            <ul>
-                <li class="title">D'accord ok oui</li>
-                <li class="artist">Kelly</li>
-                <li class="time">0:50</li>
-                <li class="share">link</li>
-            </ul>
-        </li>
-        <li class="music"><a href="#" data-src="http://kolber.github.io/audiojs/demos/mp3/05-one-more-chance-for-a-heart-to-skip-a-beat.mp3"></a>
-            <ul>
-                <li class="title">D'accord ok oui</li>
-                <li class="artist">Kelly</li>
-                <li class="time">0:50</li>
-                <li class="share">link</li>
-            </ul>
-        </li>
+        <?php endforeach; ?>
         </ol>
-        </div>
+    </div>
 </section>
 

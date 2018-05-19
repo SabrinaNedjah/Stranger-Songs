@@ -51,9 +51,8 @@ header {
         top: 20px;
         left: 35%;
         width: 50%;
-        font-family: "Gotham";
+        font-family: "Gotham-Medium";
         font-size: 15px;
-        font-weight: 400;
         @media screen and (max-width: $break-medium) {
             left:33%;
         }
@@ -114,7 +113,7 @@ header {
 ********************************/
 
 footer {
-    font-family: "Gotham";
+    font-family: "Gotham-Medium";
     font-size: 15px;
     font-weight: 400;
     color: $white;
@@ -257,7 +256,7 @@ footer {
             font-size: 17px;
             line-height: 24px;
             color: $white;
-            font-family: "Gotham";
+            font-family: "Gotham-Light";
             font-weight: 300;
         }
         .button {
@@ -274,7 +273,7 @@ footer {
                 text-align: center;
                 background: $red;
                 color: $white;
-                font-family: "Gotham";
+                font-family: "Gotham-Medium";
                 font-size: 14px;
                 text-transform: uppercase;
                 border: 0;
@@ -327,7 +326,7 @@ footer {
 ********************************/
 
 .tracks {
-    font-family: "Gotham";
+    font-family: "Gotham-Medium";
     font-weight: 400;
     width: 100%;
     h1 {
@@ -346,7 +345,7 @@ footer {
         text-align: center;
         line-height: 2px;
         color: $white;
-        font-family: "Gotham";
+        font-family: "Gotham-Medium";
         @media (max-width:780px) {
             font-size: 15px;
           }
@@ -375,7 +374,7 @@ footer {
             text-align: center;
             background: $red;
             color: $white;
-            font-family: "Gotham";
+            font-family: "Gotham-Medium";
             font-size: 14px;
             font-weight:300;
             text-transform: uppercase;
@@ -582,7 +581,7 @@ footer {
           @media (max-width:430px) {
             margin-top:60%;
             margin-left:27%;
-            width:180px;
+            width:140px;
           }
     }
 }
