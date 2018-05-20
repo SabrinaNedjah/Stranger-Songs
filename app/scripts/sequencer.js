@@ -47,6 +47,11 @@ const sequencer = {
     });
 
     $('.sequencer_toolbar .button.play').on('click', function(event) {
+      // Don't allow playing song when it's still recording.
+      if (self.states.isRecording) {
+        return;
+      }
+
       const el = $(this);
 
       el.addClass('playing');
@@ -81,6 +86,7 @@ const sequencer = {
     $(document).off('keydown');
     $(document).off('keyup');
     $('.sequencer_toolbar .button.record').off('click');
+    $('.sequencer_toolbar .button.play').off('click');
     $('.save').off('click');
   },
   parseAudio: function() {
