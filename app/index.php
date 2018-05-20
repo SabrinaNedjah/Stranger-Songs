@@ -17,13 +17,20 @@ if ($q === '') {
     $page = 'letsplay';
 } else if ($q === 'tracks') {
     $page = 'tracks';
+} else if ($q === 'category') {
+    $page = 'category';
+} else if ($q === 'sequencer') {
+    $page = 'sequencer';
 } else {
-    $page = '404';
+  $page = '404';
 }
 
-
-include 'partials/_header.php';
-include 'partials/_menu.php';
-require 'pages/' . $page . '.php';
-include 'partials/_social.php';
-include 'partials/_footer.php';
+if ($q === 'record') {
+  require 'pages/' . $q . '.php';
+} else {
+  include 'partials/_header.php';
+  include 'partials/_menu.php';
+  require 'pages/' . $page . '.php';
+  include 'partials/_social.php';
+  include 'partials/_footer.php';
+}

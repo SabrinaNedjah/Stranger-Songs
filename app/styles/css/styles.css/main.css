@@ -3,27 +3,27 @@
   src: url("../../fonts/Benguiat Bold.ttf"); }
 
 @font-face {
-  font-family: "Gotham-Black";
+  font-family: "Gotham";
   src: url("../../fonts/gotham/Gotham-Black.otf");
   font-weight: 900; }
 
 @font-face {
-  font-family: "Gotham-Bold";
+  font-family: "Gotham";
   src: url("../../fonts/gotham/Gotham-Bold.otf");
   font-weight: 700; }
 
 @font-face {
-  font-family: "Gotham-Book";
+  font-family: "Gotham";
   src: url("../../fonts/gotham/Gotham-Book.ttf");
   font-weight: 500; }
 
 @font-face {
-  font-family: "Gotham-Light";
+  font-family: "Gotham";
   src: url("../../fonts/gotham/Gotham-Light.otf");
   font-weight: 300; }
 
 @font-face {
-  font-family: "Gotham-Medium";
+  font-family: "Gotham";
   src: url("../../fonts/gotham/Gotham-Medium.ttf");
   font-weight: 400; }
 
@@ -315,4 +315,400 @@ text-transform: uppercase;
 }
 .letsplay .letsplay_descrip .letsplay_paragr{
 margin-bottom: 1em;
+}
+
+.letsplay_cta{
+  display: inline-block;
+  height: 32px;
+  padding: 0 50px;
+  line-height: 32px;
+  background-color: #D8272A;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.category{
+  margin: 6em auto;
+  max-width: 50%
+}
+
+.category .category_list_items{
+  display: flex;
+  height: 400px;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.category .category_item {
+  display: inline-block;
+  list-style-type: none;
+  height: 100px;
+  padding: 0 50px;
+  background-color: #D8272A;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 5px solid #D8272A;
+  transition: all .2s ease-out;
+}
+
+.category .category_item:hover {
+  border: 5px solid white;
+}
+
+.category .category_item a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  padding-top: 15px;
+}
+
+.category .category_item h4{
+  font-size: 24px;
+}
+
+.category .category_item p{
+  padding-top: 8px;
+  font-size: 14px;
+}
+
+.sequencer{
+  margin: 4em auto;
+}
+
+.sequencer .sequencer_keyboard{
+  width: 950px;
+  height: 276px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.sequencer .sequencer_keyboard li{
+  position: relative;
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  font-size: 24px;
+  font-family: Gotham;
+  font-weight: 300;
+  line-height: 94px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-right: 2px;
+}
+
+.sequencer .sequencer_keyboard li:after{
+  content: '';
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.1);
+  transition: opacity .2s ease-out;
+}
+
+.sequencer .sequencer_keyboard li.active:after{
+  opacity: 1;
+}
+
+.sequencer .sequencer_keyboard li.nested {
+  margin-left: 30px;
+}
+
+.sequencer .sequencer_keyboard li.double-nested {
+  margin-left: 60px;
+}
+
+.sequencer .sequencer_keyboard li[data-type="1"] {
+  background-color: #D82A2C;
+}
+
+.sequencer .sequencer_keyboard li[data-type="2"] {
+  background-color: #E311E5;
+}
+
+.sequencer .sequencer_keyboard li[data-type="3"] {
+  background-color: #FF2F0D;
+}
+
+.sequencer .sequencer_keyboard li[data-type="4"] {
+  background-color: #EF1F8B;
+}
+
+.sequencer .sequencer_keyboard li[data-type="5"] {
+  background-color: #9513E5;
+}
+
+.sequencer .sequencer_track{
+  z-index: 1;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 340px;
+  background-color: #222020;
+}
+
+.sequencer .sequencer_toolbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  padding: 0 80px;
+  line-height: 70px;
+  background-color: #1D1D1D;
+}
+
+.sequencer .sequencer_toolbar .button{
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 100%;
+  cursor: pointer;
+  transition: opacity .2s ease-out;
+}
+
+.sequencer .sequencer_toolbar .button:before{
+  position: absolute;
+  top: calc(50% - 17px);
+  left: -1px;
+  content: '';
+  display: inline-block;
+  width: 37px;
+  height: 37px;
+  border-radius: 50px;
+  border: 3px solid transparent;
+  transition: border .2s ease-out;
+}
+
+.sequencer .sequencer_toolbar .record.recording:before,
+.sequencer .sequencer_toolbar .play.playing:before{
+  border: 3px solid #ffffff;
+}
+
+.sequencer .sequencer_toolbar .button:hover,
+.sequencer .sequencer_toolbar .button:focus,
+.sequencer .sequencer_toolbar .button:active {
+  opacity: 0.7;
+}
+
+.sequencer .sequencer_toolbar .button img{
+  z-index: 1;
+  width: 35px;
+  vertical-align: middle;
+}
+
+.sequencer .sequencer_toolbar .timer{
+  display: inline-block;
+  height: 100%;
+  padding-left: 5px;
+  line-height: 70px;
+  color: #F2292B;
+  font-size: 14px;
+  font-family: Gotham;
+}
+
+.sequencer .sequencer_toolbar .timer span{
+  display: inline-block;
+  width: 45px;
+}
+
+.sequencer .sequencer_toolbar .save{
+  display: inline-block;
+  height: 30px;
+  padding: 0 50px;
+  background-color: #D8272A;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-family: Gotham;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+}
+
+.sequencer_start-record{
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 270px;
+  background-color: rgba(34, 32, 32, 1);
+}
+
+.sequencer_start-record.existing-record{
+  background-color: rgba(34, 32, 32, 0.7);
+}
+
+.sequencer_start-record p {
+  text-align: center;
+  font-size: 20px;
+  font-family: Gotham;
+  font-weight: 300;
+  color: #D82A2C;
+}
+
+.sequencer_start-record span{
+  display: inline-block;
+  height: 20px;
+  margin: 0 5px;
+  padding: 15px 15px;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(0,0,0, 15);
+  line-height: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  background-color: #EDEDED;
+}
+
+.sequencer .sequencer_recorder {
+  padding: 0;
+  margin: 0;
+}
+
+.sequencer .sequencer_recorder li{
+  position: relative;
+  height: 54px;
+  list-style: none;
+  border-top: 1px solid #D8272A;
+}
+
+.sequencer .sequencer_recorder li:first-of-type{
+  border-top: 0;
+}
+
+.sequencer .sequencer_recorder li:first-of-type .block{
+  background-color: #D82A2C;
+}
+
+.sequencer .sequencer_recorder li:nth-of-type(2) .block{
+  background-color: #E311E5;
+}
+
+.sequencer .sequencer_recorder li:nth-of-type(3) .block{
+  background-color: #FF2F0D;
+}
+
+.sequencer .sequencer_recorder li:nth-of-type(3) .block{
+  background-color: #EF1F8B;
+}
+
+.sequencer .sequencer_recorder li:nth-of-type(3) .block{
+  background-color: #9513E5;
+}
+
+.sequencer .sequencer_recorder .block{
+  display: inline-block;
+  position: absolute;
+  width: 0px;
+  height: 100%;
+  background-color: yellow;
+  transition: width 0.05s linear
+}
+
+.popup-overlay{
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.7);
+}
+
+.popup-save{
+  z-index: 3;
+  display: none;
+  position: fixed;
+  top: calc(50% - 225px);
+  left: calc(50% - 375px);
+  width: 750px;
+  height: 450px;
+  padding: 50px;
+  background: #ffffff;
+  border-radius: 2px;
+  font-family: Gotham;
+  color: #333333;
+}
+
+.popup-close{
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  content: 'x';
+  font-size: 30px;
+  font-family: Gotham;
+  font-weight: 300;
+  color: #333;
+}
+
+.popup-save h3{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.popup-save .popup-save_content{
+  display: flex;
+  flex-direction: row;
+}
+
+.popup-save .popup-save_content>div{
+  width: 50%;
+}
+
+.popup-save .popup-save_content p {
+  margin: 20px 0px;
+}
+
+.popup-save .popup-save_content label{
+  display: inline-block;
+  color: #333333;
+  margin-bottom: 5px;
+}
+
+.popup-save .popup-save_content audio{
+  margin-top: 47px;
+}
+
+.popup-save .popup-save_content input{
+  width: 100%;
+  height: 46px;
+  padding-left: 15px;
+  background-color: #F0F0F0;
+  line-height: 46px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.popup-save .popup-save_footer button{
+  cursor: pointer;
+  display: inline-block;
+  width: 150px;
+  height: 32px;
+  padding: 0 15px;
+  background-color: #D8272A;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 300;
 }
