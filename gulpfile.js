@@ -1,14 +1,14 @@
 var gulp        = require('gulp');
 var sass        = require('gulp-sass');
 
-// Static Server + watching scss/html files
+// Watching scss/html files
 gulp.task('serve', ['sass'], function() {
 
     gulp.watch("app/styles/partials/*.scss", ['sass']);
 
 });
 
-// Compile sass into CSS & auto-inject into browsers
+// Compile sass into CSS 
 gulp.task('sass', function() {
     return gulp.src("app/styles/partials/*.scss")
         .pipe(sass())
