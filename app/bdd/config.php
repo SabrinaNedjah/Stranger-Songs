@@ -1,9 +1,4 @@
-
 <?php
-/*
-INSERT INTO tracks (Title, Artist, Time, Share) 
-VALUES ('Dark sky', 'Luisa a.', 00, 'link'), ('Stranger things', 'Lola', 00, 'link')
-*/
 
 // BDD
 define('DB_HOST', 'localhost');
@@ -26,3 +21,5 @@ catch(PDOException $e)
 // Retrieve elements of the BDD
 $query = $pdo->query('SELECT * FROM tracks'); 
 $tracks = $query->fetchAll(); 
+
+

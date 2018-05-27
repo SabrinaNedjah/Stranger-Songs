@@ -5,8 +5,8 @@ include 'bdd/config.php';
     <h1>Tracks</h1>
     <h2>The beautiful songs of the users</h2>
     <div class="player">
-        <audio id="audio" preload="auto" tabindex="0" type="audio/mpeg">
-            <source type="audio/mp3" src="musics/Memories That You Call (feat. Monsoonsiren)_158279202_soundcloud.mp3">
+        <audio id="audio" preload autoplay tabindex="0" type="audio/mpeg" controls>
+            <source type="audio/mp3">
             Sorry, your browser does not support HTML5 audio.
         </audio>
         <a href="#popup">
