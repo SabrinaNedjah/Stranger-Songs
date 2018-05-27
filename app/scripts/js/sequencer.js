@@ -37,7 +37,7 @@ const sequencer = {
       self.record.stopBuildBlock.call(self);
 
       // Shift key.
-      if (event.keyCode === 9) {
+      if (event.keyCode === 16) {
         self.record.toggle.call(self, event);
       }
     });
