@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Benguiat Bold";
+  src: url("../../fonts/Benguiat Bold.ttf"); }
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../../fonts/gotham/Gotham-Black.otf");
+  font-weight: 900; }
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../../fonts/gotham/Gotham-Bold.otf");
+  font-weight: 700; }
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../../fonts/gotham/Gotham-Book.ttf");
+  font-weight: 500; }
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../../fonts/gotham/Gotham-Light.otf");
+  font-weight: 300; }
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../../fonts/gotham/Gotham-Medium.ttf");
+  font-weight: 400; }
+
+body {
+  background: #282828; }
