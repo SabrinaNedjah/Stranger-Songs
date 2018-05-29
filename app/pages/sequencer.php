@@ -1,4 +1,44 @@
 <div class="sequencer">
+<a href="#" class="menu-toggle">clique sur moi</a>
+<aside class="menu2">
+    <div class="button_more">
+      <p>Help</p>
+    </div>
+    <div class="help">
+      <div class="square red"></div>
+        <p>Melodies</p>
+      <div class="square purple"></div>
+        <p>Percussions</p>
+      <div class="square orange"></div>
+        <p>Basse</p>
+      <div class="square red"></div>
+        <p>Fx</p>
+      <div class="square dark_purple"></div>
+        <p>Batterie</p>
+      </div>
+    <div class="button_more">
+        <p>Keyboard options</p>
+    </div>
+    <div class="keyboard_options">
+      <div class="azerty mode_keyboard">
+        <p>Azerty</p> 
+      </div>
+      <div class="qwerty">
+        <p>Qwerty</p>
+      </div>
+    </div>
+    <div class="button_more">
+        <p>Color Blind</p>
+    </div>
+      <div class="colorblind">
+      <div class="yes">
+       <p>Yes</p>
+      </div>
+      <div class="no">
+        <p>No</p>
+      </div>
+  </div>
+</aside>
   <ul class="sequencer_keyboard">
     <li data-type="1" data-letter="a">a</li>
     <li data-type="1" data-letter="z">z</li>

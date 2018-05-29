@@ -5,15 +5,13 @@ include 'bdd/config.php';
     <h1>Tracks</h1>
     <h2>The beautiful songs of the users</h2>
     <div class="player">
-    <audio id="audio" preload="auto" autoplay="true" tabindex="0" type="audio/mpeg" controls>
+    <audio id="audio" preload="auto" autoplay="true" tabindex="0" type="audio/mpeg">
             <source type="audio/mp3">
             Sorry, your browser does not support HTML5 audio.
         </audio>
         <a href="#popup">
         <div class="button_play">
                 Keyboard Options
-            </div>
-            <div class="button_rect">
             </div>
         </a>
         <div id="popup">

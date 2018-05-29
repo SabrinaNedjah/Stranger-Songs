@@ -32,8 +32,21 @@ switch ($q) {
     default:
         $page = '404';
 }
+include 'partials/_header.php';
+include 'partials/_menu.php';
+require 'pages/' . $page . '.php';
+include 'partials/_social.php';
 
-if ($q === 'record') {
+if (($q === 'letsplay') || ($q === 'category') || ($q === 'sequencer')){
+    include 'partials/_footer_game.php';
+  } else if ($q === 'tracks'){
+    include 'partials/_footer_tracks.php';
+  } else{
+    include 'partials/_footer.php';
+  }
+
+  /*
+  if ($q === 'record') {
     require 'pages/' . $q . '.php';
   } else {
     include 'partials/_header.php';
@@ -42,3 +55,5 @@ if ($q === 'record') {
     include 'partials/_social.php';
     include 'partials/_footer.php';
   }
+  */
+  

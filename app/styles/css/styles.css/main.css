@@ -748,6 +748,9 @@ footer .watch {
       TRACKS - END
   ********************************/
 
+/***
+    LET'S PLAY - START
+********************************/
 .letsplay {
   text-align: center;
   margin: 6em auto;
@@ -782,7 +785,12 @@ footer .watch {
   text-decoration: none;
   text-transform: uppercase;
 }
-
+/***
+    LET'S PLAY - END
+********************************/
+/***
+    CATEGORY - START
+********************************/
 .category {
   margin: 6em auto;
   max-width: 50%;
@@ -830,9 +838,67 @@ footer .watch {
   padding-top: 8px;
   font-size: 14px;
 }
-
+/***
+    CATEGORY - END
+********************************/
+/***
+    SEQUENCER - START
+********************************/
 .sequencer {
   margin: 4em auto;
+}
+
+/* .sequencer .help, .keyboard_options, .colorblind{
+  display:none;
+} */
+
+.menu2{
+  position:absolute;
+  top:0;
+ /* left:-300px; */
+  left:0;
+  width:300px;
+  height:100%;
+  background:#ccc;
+  transform: translateX(-100%) translateZ(0); /* c'est mieux et Z c'est une transformation 3d pour que ça puisse etre compatible sur IE */
+  /*transition: left 0.6s; */
+  transition: transform 0.6s;
+  will-change: transform;
+  z-index:100;
+  /* compatibilité de will-change, pas top.  */
+}
+
+.menu2.active{
+  transform:translateX(0%) translateZ(0);
+}
+
+.menu-toggle{
+  margin-left:500px;
+}
+
+.sequencer .button_more {
+  color:#D8272A;
+}
+
+.sequencer .square{
+  width:30px;
+  height:30px;
+  display:inline-block;
+  vertical-align: middle;
+  background:red;
+}
+
+.sequencer .square p{
+  display:inline-block;
+  vertical-align: middle;
+}
+
+.sequencer div{
+  cursor:pointer;
+}
+
+.sequencer p.active{
+  color:#EF1F8B;
 }
 
 .sequencer .sequencer_keyboard {
@@ -1172,7 +1238,9 @@ footer .watch {
   font-size: 14px;
   font-weight: 300;
 }
-
+/***
+    SEQUENCER - ENDS
+********************************/
 /***
       RESPONSIVE MODE - START
   ********************************/
@@ -1237,20 +1305,20 @@ footer .watch {
     width: 70%;
   }
   .app_mobile img {
-    margin-top: 45%;
+    margin-top: 55%;
     margin-left: 20%;
     width: 160px;
   }
 }
 
 @media (max-width: 375px) {
+  .app_mobile {
+    margin-top: 10%;
+    width: 75%;
+  }
   .app_mobile img {
-    margin-top: 60%;
     margin-left: 20%;
     width: 160px;
-  }
-  .app_mobile {
-    width: 75%;
   }
 }
 
@@ -1270,7 +1338,7 @@ footer .watch {
   }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
+@media only screen and (min-device-width: 0px) and (max-device-width: 736px) {
   header,
   footer,
   .home,
