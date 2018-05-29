@@ -848,24 +848,17 @@ footer .watch {
   margin: 4em auto;
 }
 
-/* .sequencer .help, .keyboard_options, .colorblind{
-  display:none;
-} */
-
 .menu2{
   position:absolute;
   top:0;
- /* left:-300px; */
   left:0;
   width:300px;
   height:100%;
   background:#ccc;
-  transform: translateX(-100%) translateZ(0); /* c'est mieux et Z c'est une transformation 3d pour que ça puisse etre compatible sur IE */
-  /*transition: left 0.6s; */
+  transform: translateX(-100%) translateZ(0);
   transition: transform 0.6s;
   will-change: transform;
   z-index:100;
-  /* compatibilité de will-change, pas top.  */
 }
 
 .menu2.active{
@@ -876,16 +869,19 @@ footer .watch {
   margin-left:500px;
 }
 
-.sequencer .button_more {
+.sequencer aside h4{
+  margin-top:20px;
+  font-size:20px;
   color:#D8272A;
 }
 
 .sequencer .square{
-  width:30px;
+  margin-top:10px;
+  width:200px;
   height:30px;
-  display:inline-block;
-  vertical-align: middle;
+  display:block;
   background:red;
+  color:white;
 }
 
 .sequencer .square p{
@@ -893,12 +889,17 @@ footer .watch {
   vertical-align: middle;
 }
 
-.sequencer div{
-  cursor:pointer;
-}
-
 .sequencer p.active{
   color:#EF1F8B;
+}
+
+.square_options {
+  margin-top:10px;
+  width:200px;
+  height:30px;
+  display:block;
+  background:red;
+  color:white;
 }
 
 .sequencer .sequencer_keyboard {

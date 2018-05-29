@@ -1,42 +1,23 @@
 <div class="sequencer">
-<a href="#" class="menu-toggle">clique sur moi</a>
+<a href="#" class="menu-toggle">Options / Help</a>
 <aside class="menu2">
-    <div class="button_more">
-      <p>Help</p>
-    </div>
+      <h4>Help<h4>
     <div class="help">
-      <div class="square red"></div>
-        <p>Melodies</p>
-      <div class="square purple"></div>
-        <p>Percussions</p>
-      <div class="square orange"></div>
-        <p>Basse</p>
-      <div class="square red"></div>
-        <p>Fx</p>
-      <div class="square dark_purple"></div>
-        <p>Batterie</p>
+      <div class="square red">Melodies</div>
+      <div class="square purple">Percussions</div>
+      <div class="square orange">Basse</div>
+      <div class="square red">FX</div>
+      <div class="square dark_purple">BATTERIE</div>
       </div>
-    <div class="button_more">
-        <p>Keyboard options</p>
-    </div>
+        <h4>Keyboard options</h4>
     <div class="keyboard_options">
-      <div class="azerty mode_keyboard">
-        <p>Azerty</p> 
-      </div>
-      <div class="qwerty">
-        <p>Qwerty</p>
-      </div>
+      <div class="square_options azerty mode_keyboard">Azerty</div>
+      <div class="square_options qwerty">Qwerty</div>
     </div>
-    <div class="button_more">
-        <p>Color Blind</p>
-    </div>
+        <h4>Color Blind</h4>
       <div class="colorblind">
-      <div class="yes">
-       <p>Yes</p>
-      </div>
-      <div class="no">
-        <p>No</p>
-      </div>
+      <div class="square_options yes">Yes</div>
+      <div class="square_options no">No</div>
   </div>
 </aside>
   <ul class="sequencer_keyboard">
