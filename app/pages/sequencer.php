@@ -1,25 +1,4 @@
 <div class="sequencer">
-<a href="#" class="menu-toggle">Options / Help</a>
-<aside class="menu2">
-      <h4>Help<h4>
-    <div class="help">
-      <div class="square red">Melodies</div>
-      <div class="square purple">Percussions</div>
-      <div class="square orange">Basse</div>
-      <div class="square red">FX</div>
-      <div class="square dark_purple">BATTERIE</div>
-      </div>
-        <h4>Keyboard options</h4>
-    <div class="keyboard_options">
-      <div class="square_options azerty mode_keyboard">Azerty</div>
-      <div class="square_options qwerty">Qwerty</div>
-    </div>
-        <h4>Color Blind</h4>
-      <div class="colorblind">
-      <div class="square_options yes">Yes</div>
-      <div class="square_options no">No</div>
-  </div>
-</aside>
   <ul class="sequencer_keyboard">
     <li data-type="1" data-letter="a">a</li>
     <li data-type="1" data-letter="z">z</li>
@@ -48,7 +27,40 @@
     <li data-type="5" data-letter="b">b</li>
     <li data-type="5" data-letter="n">n</li>
   </ul>
-  <?php require_once('partials/sequencer-sounds.php'); ?>
+
+  <?php require_once 'partials/sequencer-sounds.php';?>
+  <aside id="popup">
+    <div class="menu_help">
+      <h4>Help</h4>
+    <div class="help">
+      <div class="square_options">
+        <div class="square red"></div>
+        <p>Melodies</p>
+      </div>
+      <div class="square_options">
+        <div class="square purple"></div>
+        <p>Percussions</p>
+      </div>
+      <div class="square_options">
+        <div class="square orange"></div>
+        <p>Basses</p>
+      </div>
+      <div class="square_options">
+        <div class="square pink"></div>
+        <p>FX</p>
+      </div>
+      <div class="square_options">
+        <div class="square dark_purple"></div>
+        <p>Batteries</p>
+      </div>
+      </div>
+        <h4>Keyboard options</h4>
+    <div class="keyboard_options">
+      <div class="square_options azerty active">Azerty</div>
+      <div class="square_options qwerty">Qwerty</div>
+    </div>
+    </div>
+</aside>
   <div class="sequencer_track">
     <div class="sequencer_toolbar">
       <div>
@@ -56,6 +68,11 @@
         <span class="button play"><img src="images/tracks/icon_play.svg"></span>
         <p class="timer"><span>00:00</span> / 01:00</p>
       </div>
+      <a href="#popup">
+      <div class="button_play">
+        <p>Options / Help</p>
+      </div>
+      </a>
       <div>
         <a href="" class="save">Save</a>
       </div>

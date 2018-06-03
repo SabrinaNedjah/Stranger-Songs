@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" href="images/header/favicon.png" sizes="32x32">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <link rel="stylesheet" href="styles/css/reset.css"/>
-    <link rel="stylesheet" type="text/css" href="styles/css/styles.css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/css/main.css"/>
 </head>
 <body>
     <div class="app">

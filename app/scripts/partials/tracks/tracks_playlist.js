@@ -48,13 +48,9 @@ $(window).on("load resize ", function() {
 			  })
 		});
 
+		// Pop up option of the playlist
 		$("a[href='#popup']").on("click", openPopUp);
 		$("#popup").on("click", closePopUp);
-		
-		function i()
-		{
-		  alert("afa");
-		}
 		
 		function openPopUp()
 		{

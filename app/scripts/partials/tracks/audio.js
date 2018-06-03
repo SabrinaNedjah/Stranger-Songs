@@ -584,8 +584,6 @@
       var playPromise = audio.play ();
          if (playPromise !== undefined) {
            playPromise.then (_ => {
-             // La lecture automatique a commencé!
-             // Nous pouvons maintenant mettre en pause la vidéo en toute sécurité ... 
               audio.pause();
               this.element.load();
            });

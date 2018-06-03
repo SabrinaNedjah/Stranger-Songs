@@ -1,56 +1,60 @@
 @font-face {
-	font-family: "Benguiat Bold";
-	src: url('../../fonts/Benguiat Bold.ttf');
+  font-family: "Benguiat Bold";
+  src: url('../fonts/Benguiat Bold.ttf');
 }
 
 @font-face {
-	font-family: "Gotham-Black";
-    src: url('../../fonts/gotham/Gotham-Black.otf');
-        font-weight: 900;
+  font-family: "Gotham-Black";
+  src: url('../fonts/gotham/Gotham-Black.otf');
+  font-weight: 900;
 }
 
 @font-face {
-	font-family: "Gotham-Bold";
-    src: url('../../fonts/gotham/Gotham-Bold.otf');
-        font-weight: 700;
+  font-family: "Gotham-Bold";
+  src: url('../fonts/gotham/Gotham-Bold.otf');
+  font-weight: 700;
 }
 
 @font-face {
-	font-family: "Gotha-Book";
-    src: url('../../fonts/gotham/Gotham-Book.ttf');
-        font-weight: 500;
+  font-family: "Gotha-Book";
+  src: url('../fonts/gotham/Gotham-Book.ttf');
+  font-weight: 500;
 }
 
 @font-face {
-	font-family: "Gotham-Medium";
-    src: url('../../fonts/gotham/Gotham-Medium.ttf');
-        font-weight: 400;
+  font-family: "Gotham-Medium";
+  src: url('../fonts/gotham/Gotham-Medium.ttf');
+  font-weight: 400;
 }
 
 @font-face {
-	font-family: "Gotham-Light";
-    src: url('../../fonts/gotham/Gotham-Light.otf');
-        font-weight: 300;
+  font-family: "Gotham-Light";
+  src: url('../fonts/gotham/Gotham-Light.otf');
+  font-weight: 300;
 }
 
 body {
   background: #282828;
 }
+
 /***
       ERROR - START
   ********************************/
-  h1.error {
-  margin-top:80px;
-  text-align:center;
-  font-family: "Gotham-Medium";;
-  font-size:35px;
+
+h1.error {
+  margin-top: 80px;
+  text-align: center;
+  font-family: "Gotham-Medium";
+  ;
+  font-size: 35px;
 }
 
 h2.error {
-  margin-top:10px;
-  text-align:center;
-  font-family: "Gotham-Medium";;
-  font-size:25px;
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Gotham-Medium";
+  ;
+  font-size: 25px;
 }
 
 /***
@@ -751,6 +755,7 @@ footer .watch {
 /***
     LET'S PLAY - START
 ********************************/
+
 .letsplay {
   text-align: center;
   margin: 6em auto;
@@ -785,12 +790,15 @@ footer .watch {
   text-decoration: none;
   text-transform: uppercase;
 }
+
 /***
     LET'S PLAY - END
 ********************************/
+
 /***
     CATEGORY - START
 ********************************/
+
 .category {
   margin: 6em auto;
   max-width: 50%;
@@ -838,69 +846,157 @@ footer .watch {
   padding-top: 8px;
   font-size: 14px;
 }
+
 /***
     CATEGORY - END
 ********************************/
+
 /***
     SEQUENCER - START
 ********************************/
+
 .sequencer {
   margin: 4em auto;
 }
 
-.menu2{
-  position:absolute;
-  top:0;
-  left:0;
-  width:300px;
-  height:100%;
-  background:#ccc;
-  transform: translateX(-100%) translateZ(0);
-  transition: transform 0.6s;
-  will-change: transform;
-  z-index:100;
+/* Pop up help */
+
+.sequencer #popup {
+  background-color: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  display: none;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  right: 0;
+  top: 0;
+  transition: all 1s;
+  z-index: 9999;
 }
 
-.menu2.active{
-  transform:translateX(0%) translateZ(0);
+.sequencer #popup .menu_help {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  width: 550px;
+  padding: 10px 0px 0px 20px;
+  background-color: #FAFAFA;
+  color: #282828;
+  height: 500px;
+  margin: 2em auto;
 }
 
-.menu-toggle{
-  margin-left:500px;
+@media (max-width: 1300px) {
+  .sequencer #popup .menu_help {
+    left: 27%;
+  }
 }
 
-.sequencer aside h4{
-  margin-top:20px;
-  font-size:20px;
-  color:#D8272A;
+@media (max-width: 1200px) {
+  .sequencer #popup .menu_help {
+    left: 24%;
+  }
 }
 
-.sequencer .square{
-  margin-top:10px;
-  width:200px;
-  height:30px;
-  display:block;
-  background:red;
-  color:white;
+@media (max-width: 950px) {
+  .sequencer #popup .menu_help {
+    left: 18%;
+  }
 }
 
-.sequencer .square p{
-  display:inline-block;
+@media (max-width: 800px) {
+  .sequencer #popup .menu_help {
+    left: 15%;
+  }
+}
+
+.sequencer aside h4 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #282828;
+  text-transform: uppercase;
+  font-family: 'Gotham-Medium';
+}
+
+.sequencer aside h4:first-child {
+  margin-left: 10px;
+}
+
+.sequencer .square {
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 10px 0px 0px 10px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-transform: lowercase;
+  font-family: 'Gotham-Medium';
+}
+
+.sequencer .square_options {
+  display: block;
+}
+
+.sequencer .help p {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 24px;
+  margin-left: 10px;
+  font-size: 16px;
+  color: #282828;
+  text-transform: uppercase;
+  font-family: 'Gotham-Medium';
+}
+
+.sequencer .square.red {
+  background: #D82A2C;
+}
+
+.sequencer .square.purple {
+  background: #E311E5;
+}
+
+.sequencer .square.orange {
+  background: #FF2F0D;
+}
+
+.sequencer .square.pink {
+  background: #EF1F8B;
+}
+
+.sequencer .square.dark_purple {
+  background: #9513E5;
+}
+
+.sequencer .square p {
+  display: inline-block;
   vertical-align: middle;
 }
 
-.sequencer p.active{
-  color:#EF1F8B;
+.sequencer p.active {
+  color: #EF1F8B;
 }
 
-.square_options {
-  margin-top:10px;
-  width:200px;
-  height:30px;
-  display:block;
-  background:red;
-  color:white;
+.keyboard_options .square_options {
+  margin-right: 10px;
+  padding: 14px 28px;
+  display: inline;
+  width: 130px;
+  height: 40px;
+  float: left;
+  background: #D82A2C;
+  font-family: 'Gotham-Medium';
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
 }
+
+.keyboard_options .square_options.active {
+  background: #02D050;
+}
+
+/* keyboard */
 
 .sequencer .sequencer_keyboard {
   width: 950px;
@@ -971,6 +1067,8 @@ footer .watch {
   background-color: #9513E5;
 }
 
+/* tracks */
+
 .sequencer .sequencer_track {
   z-index: 1;
   position: fixed;
@@ -980,6 +1078,8 @@ footer .watch {
   height: 340px;
   background-color: #222020;
 }
+
+/* toolbar */
 
 .sequencer .sequencer_toolbar {
   display: flex;
@@ -1051,6 +1151,7 @@ footer .watch {
   height: 30px;
   padding: 0 50px;
   background-color: #D8272A;
+  color: #EDEDED;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -1059,6 +1160,68 @@ footer .watch {
   font-weight: 300;
   line-height: 30px;
   letter-spacing: 0.5px;
+}
+
+.sequencer .sequencer_toolbar .save:hover {
+  background-color: #EDEDED;
+  color: #D8272A;
+  transition: 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.sequencer .sequencer_track .button_play {
+  position: absolute;
+  z-index: 2;
+  margin-top: 22px;
+  margin-left: 190px;
+  display: inline-block;
+  height: 30px;
+  padding: 0 50px;
+  background-color: #D8272A;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-family: Gotham;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+  transition: 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+@media (max-width: 1300px) {
+  .sequencer .sequencer_track .button_play {
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .sequencer .sequencer_track .button_play {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .sequencer .sequencer_track .button_play {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 920px) {
+  .sequencer .sequencer_track .button_play {
+    margin-left: -30px;
+  }
+}
+
+@media (max-width: 860px) {
+  .sequencer .sequencer_track .button_play {
+    margin-left: -100px;
+  }
+}
+
+.sequencer .sequencer_track .button_play:hover {
+  background-color: #EDEDED;
+  color: #D8272A;
+  transition: 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .sequencer_start-record {
@@ -1239,9 +1402,11 @@ footer .watch {
   font-size: 14px;
   font-weight: 300;
 }
+
 /***
     SEQUENCER - ENDS
 ********************************/
+
 /***
       RESPONSIVE MODE - START
   ********************************/
