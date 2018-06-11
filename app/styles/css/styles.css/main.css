@@ -700,6 +700,11 @@ margin-bottom: 1em;
   font-weight: 300;
 }
 
+.popup-save .popup-save_content .track_file {
+  opacity: 0;
+  height: 0;
+}
+
 .popup-save .popup-save_footer button{
   cursor: pointer;
   display: inline-block;

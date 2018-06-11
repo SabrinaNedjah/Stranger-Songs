@@ -66,6 +66,7 @@
           <label for="project">Project name</label>
           <input id="project" type="text" name="project" placeholder="Give a name to your project" />
         </p>
+        <input class="track_file" type="file" name="track" />
       </form>
     </div>
   </div>

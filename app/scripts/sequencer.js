@@ -10,6 +10,7 @@ const sequencer = {
     audio: {},
     audioContext: new AudioContext(),
     blockWidth: 100/60/20,
+    file: null,
     recorder: null,
     recordChunks: [],
     recordStream: null
@@ -194,6 +195,8 @@ const sequencer = {
         const audioBlob = new Blob(self.values.recordChunks, { type: 'audio/ogg' });
         const audioUrl = URL.createObjectURL(audioBlob);
 
+        self.values.file = audioBlob;
+
         const audioTag = new Audio(audioUrl);
     		audioTag.controls = true;
         audioTag.controlsList = "nodownload";
@@ -345,10 +348,25 @@ const popup = {
     const name = $('input[name="name"]').val();
     const project = $('input[name="project"]').val();
 
+    console.log(sequencer.values);
+
+    const formData = new FormData();
+    formData.append('name', name);
+    formData.append('project', project);
+    formData.append('track', sequencer.values.file);
+
+    const pathname = window.location.pathname.split('/');
+    pathname.pop(); // Remove last item.
+    const url = window.location.origin + pathname.join('/') + "/record";
+
+    console.log(url);
+
     $.ajax({
       method: "POST",
-      url: "http://localhost:8888/StrangerSongs/app/record",
-      data: { name: name, project: project }
+      url: url,
+      data: formData,
+      processData: false,
+      contentType: false
     })
       .done(function(msg) {
         console.log(msg);
