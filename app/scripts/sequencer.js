@@ -348,8 +348,6 @@ const popup = {
     const name = $('input[name="name"]').val();
     const project = $('input[name="project"]').val();
 
-    console.log(sequencer.values);
-
     const formData = new FormData();
     formData.append('name', name);
     formData.append('project', project);
@@ -358,8 +356,6 @@ const popup = {
     const pathname = window.location.pathname.split('/');
     pathname.pop(); // Remove last item.
     const url = window.location.origin + pathname.join('/') + "/record";
-
-    console.log(url);
 
     $.ajax({
       method: "POST",

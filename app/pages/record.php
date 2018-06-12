@@ -1,5 +1,4 @@
 <?php
-
 // Connection to database.
 var_dump(include_once('./partials/_config.php'));
 
@@ -31,7 +30,7 @@ if (isset($_POST['name']) && isset($_POST['project'])) {
   }
 
   // Define upload directory and filename.
-  $uploadDir = __DIR__."/../uploads/";
+  $uploadDir = __DIR__."/uploads/";
   $fileName = uniqid().'.ogg';
 
   // Check if there is already a file with this name.
