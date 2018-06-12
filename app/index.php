@@ -15,8 +15,8 @@ if ($q === '') {
     $page = 'about';
 } else if ($q === 'letsplay') {
     $page = 'letsplay';
-} else if ($q === 'tracks') {
-    $page = 'tracks';
+} else if ($q === 'tracklist') {
+    $page = 'tracklist';
 } else if ($q === 'category') {
     $page = 'category';
 } else if ($q === 'sequencer') {

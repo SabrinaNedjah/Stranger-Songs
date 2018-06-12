@@ -50,7 +50,6 @@
     <canvas id="song"></canvas>
   </div>
 </div>
-
 <div class="popup-save">
   <h3>It's done!</h3>
   <div class="popup-save_content">
