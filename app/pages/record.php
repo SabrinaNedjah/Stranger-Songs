@@ -1,5 +1,4 @@
 <?php
-
 // Connection to database.
 include_once('./partials/_config.php');
 

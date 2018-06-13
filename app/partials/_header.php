@@ -8,6 +8,16 @@
     <link rel="icon" type="image/png" href="images/header/favicon.png" sizes="32x32">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
     <link rel="stylesheet" href="styles/css/reset.css"/>
-    <link rel="stylesheet" type="text/css" href="styles/css/styles.css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/css/main.css"/>
 </head>
 <body>
+<!-- RESPONSIVE MODE - START -->
+<div class="app">
+    <img src="images/responsive/landscape.png" alt="responsive">
+    <h1>Turn your screen in landscape mode</h1>
+</div>
+<div class="app_mobile">
+    <img src="images/responsive/laptop.png" alt="laptot">
+    <h1>Full site on desktop, if you want to play our game</h1>
+</div>
+<!-- RESPONSIVE MODE - START -->

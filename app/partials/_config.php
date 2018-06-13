@@ -1,6 +1,5 @@
 <?php
 $settings = [];
-
 //display error_clear_last
 $settings['displayErrorDetails'] = true;
 $settings['db'] = [];
@@ -16,4 +15,3 @@ $pdo = new PDO('mysql:host='.$db['host'].';dbname='.$db['name'].';port='.$db['po
 $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-?>

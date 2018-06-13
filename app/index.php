@@ -6,31 +6,44 @@ $q = '';
 $q = $_GET['q'];
 }
 
-
-if ($q === '') {
-    $page = 'home';
-} else if ($q === 'home') {
-    $page = 'home';
-} else if ($q === 'about') {
-    $page = 'about';
-} else if ($q === 'letsplay') {
-    $page = 'letsplay';
-} else if ($q === 'tracklist') {
-    $page = 'tracklist';
-} else if ($q === 'category') {
-    $page = 'category';
-} else if ($q === 'sequencer') {
-    $page = 'sequencer';
-} else {
-  $page = '404';
+switch ($q) {
+    case '':
+        $page = 'home';
+        break;
+    case $q === 'home':
+        $page = 'home';
+        break;
+    case $q === 'about':
+        $page = 'about';
+        break;
+    case $q === 'letsplay':
+        $page = 'letsplay';
+        break;
+    case $q === 'tracklist':
+        $page = 'tracklist';
+        break;
+    case $q === 'category':
+        $page = 'category';
+        break;
+    case $q === 'sequencer':
+        $page = 'sequencer';
+        break;
+    default:
+        $page = '404';
 }
 
 if ($q === 'record') {
   require 'pages/' . $q . '.php';
-} else {
+} else if ($q === 'sequencer'){
   include 'partials/_header.php';
   include 'partials/_menu.php';
   require 'pages/' . $page . '.php';
   include 'partials/_social.php';
-  include 'partials/_footer.php';
+  include 'partials/_footer-game.php';
+} else{
+    include 'partials/_header.php';
+    include 'partials/_menu.php';
+    require 'pages/' . $page . '.php';
+    include 'partials/_social.php';
+    include 'partials/_footer.php';
 }

@@ -1,4 +1,41 @@
+<!-- SEQUENCER - START -->
 <div class="sequencer">
+<!-- POP UP HELP - START -->
+<aside id="popup">
+    <div class="menu_help">
+      <h4>Help</h4>
+      <div class="help">
+        <div class="square_options">
+          <div class="square red"></div>
+          <p>Melodies</p>
+        </div>
+        <div class="square_options">
+          <div class="square purple"></div>
+          <p>Percussions</p>
+        </div>
+        <div class="square_options">
+          <div class="square orange"></div>
+          <p>Basses</p>
+        </div>
+        <div class="square_options">
+          <div class="square pink"></div>
+          <p>FX</p>
+        </div>
+        <div class="square_options">
+          <div class="square dark_purple"></div>
+          <p>Batteries</p>
+        </div>
+      </div>
+      <h4>Keyboard options</h4>
+      <div class="keyboard_options">
+        <div class="square_options azerty active">Azerty</div>
+        <div class="square_options qwerty">Qwerty</div>
+      </div>
+      <div class="popup-close_help">x</div>
+    </div>
+</aside>
+<!-- POP UP HELP - END -->
+<!-- SEQUENCER KEYBOARD - START -->
   <ul class="sequencer_keyboard">
     <li data-type="1" data-letter="a">a</li>
     <li data-type="1" data-letter="z">z</li>
@@ -28,6 +65,8 @@
     <li data-type="5" data-letter="n">n</li>
   </ul>
   <?php require_once('partials/sequencer-sounds.php'); ?>
+<!-- SEQUENCER KEYBOARD - END -->
+<!-- SEQUENCER TRACK - START -->
   <div class="sequencer_track">
     <div class="sequencer_toolbar">
       <div>
@@ -35,6 +74,11 @@
         <span class="button play"><img src="images/tracks/icon_play.svg"></span>
         <p class="timer"><span>00:00</span> / 01:00</p>
       </div>
+      <a href="#popup">
+        <div class="button_play">
+        Options
+        </div>
+      </a>
       <div>
         <a href="" class="save">Save</a>
       </div>
@@ -50,6 +94,8 @@
     <canvas id="song"></canvas>
   </div>
 </div>
+<!-- SEQUENCER TRACK - END -->
+<!-- POP UP SAVE - START -->
 <div class="popup-save">
   <h3>It's done!</h3>
   <div class="popup-save_content">
@@ -72,6 +118,13 @@
   <div class="popup-save_footer">
     <a href="" class="save-track" download>Download the track</a>
     <button class="submit">Publish</button>
+    <div class="discover">
+      <a href="category"><button class="replay">Replay</button></a>
+      <a href="tracklist">Discover Tracks List</a>
+    </div>
   </div>
   <div class="popup-close">x</div>
 </div>
+<!-- POP UP SAVE - START -->
+<!-- SEQUENCER - END -->
+
