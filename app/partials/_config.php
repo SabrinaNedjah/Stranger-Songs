@@ -7,7 +7,7 @@ $settings['db']['host'] = 'localhost';
 $settings['db']['port'] = '8888';
 $settings['db']['user'] = 'root';
 $settings['db']['pass'] = 'root';
-$settings['db']['name'] = 'track';
+$settings['db']['name'] = 'upload';
 
 $db = $settings['db'];
 
