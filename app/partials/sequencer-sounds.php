@@ -10,7 +10,7 @@ switch ($url['query']) {
     <audio class="open-hat" src="sounds/open-hat.mp3" data-key="69"></audio>
     <audio class="snare" src="sounds/snare.mp3" data-key="82"></audio>
     <audio class="open-hat" src="sounds/open-hat.mp3" data-key="84"></audio>
-    <audio class="snare" src="sounds/snare.mp3" data-key="89"></audio>
+    <audio class="snare" src="sounds/snare.mp3" data-key="78"></audio>
     <?php
     break;
 

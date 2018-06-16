@@ -7,15 +7,15 @@
       <div class="help">
         <div class="square_options">
           <div class="square red"></div>
-          <p>Melodies</p>
+          <p>Drums</p>
         </div>
         <div class="square_options">
           <div class="square purple"></div>
-          <p>Percussions</p>
+          <p>Percussion</p>
         </div>
         <div class="square_options">
           <div class="square orange"></div>
-          <p>Basses</p>
+          <p>Bass</p>
         </div>
         <div class="square_options">
           <div class="square pink"></div>
@@ -23,7 +23,7 @@
         </div>
         <div class="square_options">
           <div class="square dark_purple"></div>
-          <p>Batteries</p>
+          <p>Melody</p>
         </div>
       </div>
       <h4>Keyboard options</h4>
