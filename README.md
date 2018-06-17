@@ -1,6 +1,4 @@
 # Stranger Songs
-![Compose your soundtrack like Stranger Things's song and wake up the musician who is in you](https://image.noelshack.com/fichiers/2018/24/3/1528842719-capture-d-ecran-2018-06-13-a-00-29-28.png)
-
 Link : http://stranger-songs.kellywagnac.fr/app/home
 
 
