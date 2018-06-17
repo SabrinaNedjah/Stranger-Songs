@@ -108,13 +108,44 @@ header {
   width: 90%;
 }
 
+header ul li{
+  display:inline-block;
+}
+
 header a {
   display: inline-block;
+  vertical-align:bottom;
 }
 
 header img {
   width: 100px;
   display: inline-block;
+}
+
+header ul li:nth-child(2){
+  margin-top:0.5em;
+  margin-left:28em;
+}
+
+@media (max-width: 1360px) {
+  header ul li:nth-child(2){
+    margin-top:0.5em;
+    margin-left:22em;
+  }
+}
+
+@media (max-width: 1200px) {
+  header ul li:nth-child(2){
+    margin-top:0.5em;
+    margin-left:19em;
+  }
+}
+
+@media (max-width: 1100px) {
+  header ul li:nth-child(2){
+    margin-top:0.5em;
+    margin-left:17em;
+  }
 }
 
 
@@ -124,10 +155,10 @@ header .netflix {
   right: 0;
 }
 
-@media (max-width: 675px) {
-  header .netflix {
-    display: none;
-  }
+header .logo {
+  position: absolute;
+  top: 3px;
+  bottom: 0;
 }
 
 header nav {
@@ -148,16 +179,9 @@ header nav {
   }
 }
 
-@media (max-width: 870px) {
-  header nav {
-    left: 20%;
-    width: 90%;
-  }
-}
-
 
 header nav a {
-  padding: 0 20px;
+  padding: 10px 20px;
   height: 60px;
   line-height: 60px;
   text-decoration: none;
@@ -168,23 +192,6 @@ header nav a {
 header nav a:hover {
   color: #D8272A;
   transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-header nav a:after {
-  position: absolute;
-  left: 50%;
-  right: 50%;
-  height: 3px;
-  bottom: 10px;
-  content: "";
-  background-color: #D8272A;
-  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  transform: translate3d(0, 0, 0);
-}
-
-header nav a:hover:after {
-  left: 20px;
-  right: 20px;
 }
 
 /***
@@ -587,9 +594,6 @@ footer .watch {
   margin-right: 10px;
   padding: 14px 28px;
   display: inline;
-  width: 130px;
-  height: 40px;
-  float: left;
   background: #D82A2C;
   font-family: 'Gotham-Medium';
   text-transform: uppercase;
@@ -931,7 +935,6 @@ footer .watch {
 .popup-save .popup-save_footer button {
   cursor: pointer;
   display: inline-block;
-  verticzl-zlign:top;
   width: 150px;
   height: 40px;
   padding: 5px 25px;
@@ -1016,7 +1019,7 @@ footer .watch {
   text-align: center;
   font-size: 60px;
   color: #FAFAFA;
-  font-family: "Benguiat Bold";
+  font-family: "Gotham-Book";
 }
 
 @media (max-width: 780px) {
@@ -1126,19 +1129,6 @@ footer .watch {
   width: 23%;
 }
 
-@media (max-width: 990px) {
-  .tracks .song ol li.music .title,
-  .tracks .song ol li.music .artist {
-    width: 30%;
-  }
-}
-
-@media (max-width: 770px) {
-  .tracks .song ol li.music .title,
-  .tracks .song ol li.music .artist {
-    width: 28%;
-  }
-}
 
 .tracks ol::-webkit-scrollbar {
   width: 5px;
@@ -1166,7 +1156,16 @@ About text
 
 ******/
 
+.about{
+  position:absolute;
+  bottom:0;
+  width:100%;
+  padding:15px;
+  background:#D8272A;
+}
+
 .about_title {
+  margin-top:2em;
   text-align: center;
   font-family: "Benguiat Bold";
   font-size: 1.5rem;
@@ -1175,7 +1174,7 @@ About text
 .about_text {
   font-family: "Gotham-Book";
   font-size: 1rem;
-  padding: 40px 200px;
+  padding: 30px 280px;
   text-align: center;
 }
 
@@ -1184,6 +1183,9 @@ About text
 Team
 
 ******/
+.team{
+  margin-top:3em;
+}
 .img_team{
   text-align: center;
 }
@@ -1194,12 +1196,18 @@ Team
   margin-bottom: 20px;
 }
 
- li{
+ .team .img_team li{
   display: inline-block;
 }
 
 .img_team li {
   padding-left: 36px;
+}
+
+@media (max-width: 1040px) {
+  .img_team li {
+    padding-left: 20px;
+  }
 }
 
 .img_team  li:first-of-type{
@@ -1210,14 +1218,16 @@ Team
   height: 15rem;
 }
 
+
 .img_team .nom{
   font-family: "Benguiat Bold";
+  font-size: 1rem;
   margin-bottom: 10px;
 }
 
 .img_team .poste{
   font-family: "Gotham-Book";
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .nom a:hover{
@@ -1230,23 +1240,6 @@ Team
 /***
       RESPONSIVE MODE - START
   ********************************/
-
-.app {
-  margin: 0 auto;
-  display: none;
-  width: 90%;
-}
-
-.app h1 {
-  text-align: center;
-  font-size: 17px;
-}
-
-.app img {
-  margin-top: 40%;
-  margin-left: 30%;
-  width: 200px;
-}
 
 .app_mobile {
   margin: 0 auto;
@@ -1262,7 +1255,7 @@ Team
 
 .app_mobile img {
   margin-top: 20%;
-  margin-left: 35%;
+  margin-left: 40%;
   width: 180px;
 }
 
@@ -1309,25 +1302,7 @@ Team
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
-  header,
-  footer,
-  .home,
-  .tracks,
-  .letsplay,
-  .category,
-  .sequencer,
-  .error_404,
-  .about,
-  .team {
-    display: none;
-  }
-  .app {
-    display: block;
-  }
-}
-
-@media only screen and (min-device-width: 0px) and (max-device-width: 980px) {
+@media only screen and (min-device-width: 0px) and (max-device-width: 990px) {
   header,
   footer,
   .home,

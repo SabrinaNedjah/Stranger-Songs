@@ -12,10 +12,6 @@
 </head>
 <body>
 <!-- RESPONSIVE MODE - START -->
-<div class="app">
-    <img src="images/responsive/landscape.png" alt="responsive">
-    <h1>Turn your screen in landscape mode</h1>
-</div>
 <div class="app_mobile">
     <img src="images/responsive/laptop.png" alt="laptot">
     <h1>Full site on desktop, if you want to play our game</h1>
