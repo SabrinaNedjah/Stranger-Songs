@@ -1,5 +1,5 @@
 # Stranger Songs
-Link : http://stranger-songs.kellywagnac.fr/app/home
+Link : http://stranger-songs.kellywagnac.fr
 
 
 # Description
