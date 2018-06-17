@@ -5,22 +5,22 @@
         <li>
             <a href="http://www.kellywagnac.fr/" target="_blank"><img src="images/about/kelly_pola.png" alt="Kelly"></a>
             <p class="nom"><a href="http://www.kellywagnac.fr/" target="_blank">Kelly Wagnac</a></p> 
-            <p class="poste"> Designer UX/UI | Full Stack Developer</p>
+            <p class="poste"> UX/UI Designer | Full Stack Developer</p>
         </li>
         <li>
             <a href="http://www.sabrinanedjah.fr/" target="_blank"><img src="images/about/sabrina_pola.png" alt="Sabrina"></a>
             <p class="nom"><a href="http://www.sabrinanedjah.fr/" target="_blank">Sabrina Nedjah</a></p>
-            <p class="poste"> Designer UX/UI | Full Stack Developer</p>
+            <p class="poste"> UX/UI Designer | Full Stack Developer</p>
         </li>
         <li>
             <a href="http://raphaelguenassia.com/" target="_blank"><img src="images/about/raph_pola.png" alt="Raphael"></a>
             <p class="nom"><a href="http://raphaelguenassia.com/" target="_blank">Raphael Guenassia</a></p>
-            <p class="poste"> Designer UI | Front Developer </p>
+            <p class="poste"> UI Designer | Front Developer </p>
         </li>
         <li>
             <a href="https://www.behance.net/paulineaperghis" target="_blank"><img src="images/about/pauline_pola.png" alt="Pauline"></a>
             <p class="nom"><a href="https://www.behance.net/paulineaperghis" target="_blank">Pauline Aperghis</a></p>
-            <p class="poste"> Designer UI | Music Composer</p>
+            <p class="poste">  UI Designer | Music Composer</p>
         </li>
     </ul>
 </section>
