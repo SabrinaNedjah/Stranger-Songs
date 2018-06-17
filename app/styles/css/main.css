@@ -393,6 +393,14 @@ footer .watch {
   margin-bottom: 1em;
 }
 
+.letsplay .letsplay_descrip .letsplay_paragr.red{
+  color:#D8272A;
+}
+
+.letsplay .letsplay_descrip .letsplay_paragr span{
+  text-transform:uppercase;
+}
+
 .letsplay_cta {
   display: inline-block;
   height: 32px;
@@ -414,6 +422,7 @@ footer .watch {
 .category {
   margin: 6em auto;
   max-width: 50%;
+  font-family:'Gotham-Book';
 }
 
 .category .category_list_items {
@@ -831,11 +840,11 @@ footer .watch {
   background-color: #FF2F0D;
 }
 
-.sequencer .sequencer_recorder li:nth-of-type(3) .block {
+.sequencer .sequencer_recorder li:nth-of-type(4) .block {
   background-color: #EF1F8B;
 }
 
-.sequencer .sequencer_recorder li:nth-of-type(3) .block {
+.sequencer .sequencer_recorder li:nth-of-type(5) .block {
   background-color: #9513E5;
 }
 

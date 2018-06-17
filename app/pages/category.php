@@ -10,13 +10,13 @@
   <li class="category_item">
     <a href="sequencer?type=2">
       <h4>Dark</h4>
-      <p>Compose your soundtrack like Stranger Things's songs by living a peaceful experience with our light drumkit.</p>
+      <p>Compose your soundtrack like Stranger Things's songs by living a thrilling, terrifying and atypical experience with our dark drumkit.</p>
     </a>
   </li>
   <li class="category_item">
     <a href="sequencer?type=3">
       <h4>Stranger Light</h4>
-      <p>Compose your soundtrack like Stranger Things's songs by living a thrilling, terrifying and atypical experience with our dark drumkit.</p>
+      <p>Compose your soundtrack like Stranger Things's songs by living a peaceful experience with our light drumkit.</p>
     </a>
   </li>
 </ul>

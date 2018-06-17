@@ -1,4 +1,5 @@
 <?php
+
 $settings = [];
 //display error_clear_last
 $settings['displayErrorDetails'] = true;
