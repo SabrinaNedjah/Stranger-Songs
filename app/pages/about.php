@@ -1,3 +1,4 @@
+<!-- ABOUT - START -->
 <section class="team">
     <h2 class="team_title">Our Team</h2>
     <ul class="img_team">
@@ -29,3 +30,4 @@
         <p>This game based on the Netflix serie Stranger Things will allow you to create your own and personal song.</p>
     </div>
 </section>
+<!-- ABOUT - END -->
